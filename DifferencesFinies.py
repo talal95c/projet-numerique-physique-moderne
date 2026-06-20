@@ -280,7 +280,7 @@ def Validate_free_particle(t_max=30.0):
         ax.set_yscale('log')
 
     plt.tight_layout()
-    plt.savefig("/home/claude/validation_V0_0.png", dpi=150)
+    plt.savefig("validation_V0_0.png", dpi=150)
     plt.close()
     print("  Figure sauvegardee : validation_V0_0.png")
 
@@ -480,7 +480,7 @@ def Plot_barrier_simulation(V0=0.3, a_barrier=5.0, x_barrier=30.0, t_max=80.0):
     ax.legend()
 
     plt.tight_layout()
-    plt.savefig("/home/claude/simulation_barriere.png", dpi=150)
+    plt.savefig("simulation_barriere.png", dpi=150)
     plt.close()
     print("  Figure sauvegardee : simulation_barriere.png")
 
