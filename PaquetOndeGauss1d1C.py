@@ -230,16 +230,16 @@ def animate_wavepacket(t_max=30.0, n_frames=600, interval=10000000, kind=2):
     ax_density.set_ylim(0, y_max_density)
     ax_density.set_xlim(X_MIN, X_MAX)
     ax_density.set_ylabel(r"$|\psi(x,t)|^2$", fontsize=11)
-    time_text      = ax_density.text(0.02, 0.90, "temps t = 0.00",
-                         transform=ax_density.transAxes, fontsize=10, color="#3266ad")
-    norm_text      = ax_density.text(0.02, 0.76, f"norme (t) = {all_norm[0]:.4f}",
+    time_text      = ax_density.text(0.02, 0.94, "temps t = 0.00",
+                         transform=ax_density.transAxes, fontsize=9, color="#3266ad")
+    position_text  = ax_density.text(0.02, 0.87, "poistion du max : x0 = 0.00",
+                         transform=ax_density.transAxes, fontsize=9, color="#3266ad")
+    spreading_text = ax_density.text(0.02, 0.80, "dispersion : Delta x = 0.00",
+                         transform=ax_density.transAxes, fontsize=9, color="#3266ad")
+    height_text = ax_density.text(0.02, 0.73, "hauteur = 0.00",
+                         transform=ax_density.transAxes, fontsize=9, color="#3266ad")
+    norm_text      = ax_density.text(0.02, 0.66, f"norme (t) = {all_norm[0]:.4f}",
                          transform=ax_density.transAxes, fontsize=9,  color="gray")
-    position_text  = ax_density.text(0.1, 0.90, "poistion du max : x0 = 0.00",
-                         transform=ax_density.transAxes, fontsize=10, color="#3266ad")
-    spreading_text = ax_density.text(0.3, 0.90, "dispersion : Delta x = 0.00",
-                         transform=ax_density.transAxes, fontsize=10, color="#3266ad")
-    height_text = ax_density.text(0.6, 0.90, "hauteur = 0.00",
-                         transform=ax_density.transAxes, fontsize=10, color="#3266ad")
 
     # Si partie reele et/ou imag
       
